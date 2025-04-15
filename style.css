@@ -8214,6 +8214,24 @@ jdiv.jv-mouse-track {
 
     to {
         opacity: 1;
-        visibility: visible
-    }
+        visibility: @media (max-width: 768px) {
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  section {
+    padding: 20px 10px;
+  }
+
+  header h1 {
+    font-size: 1.8em;
+  }
+
+  .discord-link a {
+    width: 90%;
+    font-size: 1em;
+  }
+}
+    
 }
