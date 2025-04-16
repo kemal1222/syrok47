@@ -1,41 +1,111 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <video autoplay muted loop id="bg-video" style="position:fixed; z-index:-1; width:100%; height:100%; object-fit:cover;">
-  <source src="your-background.mp4" type="video/mp4">
-</video>
 <head>
-  <style>
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-20px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-
-  header h1 {
-    animation: fadeIn 2s ease-out;
-  }
-</style>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Логово Kursky | Black Russia</title>
- <p style="font-style: italic; color: #ccc;">"Сила в единстве, победа — в стратегии."</p>
-   <style>
-    body { margin: 0; font-family: Arial, sans-serif; background: #0d0d0d; color: #fff; }
-    header { background: #1a1a1a; padding: 20px; text-align: center; }
-    header h1 { margin: 0; font-size: 2.5em; color: #e60000; }
-    nav { background: #141414; padding: 10px; text-align: center; }
-    nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: bold; }
-    section { padding: 40px 20px; max-width: 1000px; margin: auto; }
-    h2 { color: #e60000; margin-bottom: 10px; }
-    .team-member { margin-bottom: 10px; }
-    .discord-link { text-align: center; margin: 40px 0; }
-    .discord-link a { background: #5865F2; color: #fff; padding: 12px 25px; text-decoration: none; border-radius: 8px; font-weight: bold; display: inline-block; }
-    .discord-link a:hover { background: #4752c4; }
-    footer { background: #1a1a1a; padding: 20px; text-align: center; font-size: 0.9em; color: #aaa; }
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0d0d0d;
+      color: #fff;
+    }
+
+    header {
+      background: #1a1a1a;
+      padding: 20px;
+      text-align: center;
+      animation: fadeIn 2s ease-out;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #e60000;
+      text-shadow: 0 0 10px #e60000;
+    }
+
+    nav {
+      background: #141414;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #e60000;
+      text-shadow: 0 0 8px #e60000;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #e60000;
+      margin-bottom: 10px;
+    }
+
+    .team-member {
+      margin-bottom: 10px;
+    }
+
+    .discord-link {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .discord-link a {
+      background: #5865F2;
+      color: #fff;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      display: inline-block;
+      animation: pulse 2s infinite;
+      transition: 0.3s;
+    }
+
+    .discord-link a:hover {
+      background: #4752c4;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: #1a1a1a;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.08); }
+      100% { transform: scale(1); }
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>Логово Kursky</h1>
+    <p style="font-style: italic; color: #ccc;">"Сила в единстве, победа — в стратегии."</p>
     <p>Проект в мире Black Russia</p>
   </header>
 
@@ -49,7 +119,7 @@
 
   <section id="history">
     <h2>История</h2>
-    <p>Логово Kursky было создано как объединение игроков, стремящихся к лидерству и доминированию на серверах Black Russia. Началось всё с небольшой группы единомышленников, а теперь — это узнаваемое имя в мире игры.</p>
+    <p>Логово Kursky было создано как объединение игроков, стремящихся к лидерству и доминированию на серверах Black Russia.</p>
   </section>
 
   <section id="achievements">
@@ -61,14 +131,15 @@
       <li>🎖️ Лидирование в топах игроков</li>
     </ul>
   </section>
+
   <section id="news">
-  <h2>Новости</h2>
-  <ul>
-    <li><strong>15 апреля 2025:</strong> Открыт новый раздел с гайдами в дискорде  для новичков.</li>
-    <li><strong>10 апреля 2025:</strong> Проведён успешный рейд на территорию конкурентов.</li>
-    <li><strong>5 апреля 2025:</strong> Выполнил проверку на скам б/у серверь KAZAN.</li>
-  </ul>
-</section>
+    <h2>Новости</h2>
+    <ul>
+      <li><strong>15 апреля 2025:</strong> Открыт новый раздел с гайдами в дискорде для новичков.</li>
+      <li><strong>10 апреля 2025:</strong> Проведён успешный рейд на территорию конкурентов.</li>
+      <li><strong>5 апреля 2025:</strong> Выполнил проверку на скам б/у сервер KAZAN.</li>
+    </ul>
+  </section>
 
   <section id="server">
     <h2>Сервер</h2>
@@ -79,10 +150,9 @@
   <section id="guides">
     <h2>Гайды</h2>
     <ul>
-      <li><strong>Как быстро заработать в BR  </strong></li>
+      <li><strong>Как быстро заработать в BR</strong></li>
       <li><strong>Топ-5 машин для новичков</strong></li>
-      <li><strong>Секреты успешной банды</strong></li>
-      ps есть в дискорде
+      <li><strong>Секреты успешной банды</strong> — в нашем дискорде</li>
     </ul>
   </section>
 
@@ -94,11 +164,14 @@
     <div class="team-member">🧠 <strong>RomaX</strong> — Стратег</div>
   </section>
 
-<section id="contact">
-  <h2>Контакты</h2>
-  <p>Связаться с нами: <a href="mailto:mironivkemal189@gmail.com">kontakt@kursky.ru</a></p>
-  <p>Присоединяйтесь к нашему <a href="https://discord.gg/NShEN3mD" target="_blank">Discord-серверу</a> для общения и новостей.</p>
-</section>
+  <section class="discord-link">
+    <a href="https://discord.gg/NShEN3mD" target="_blank">Присоединиться к Discord</a>
+  </section>
+
+  <section id="contact">
+    <h2>Контакты</h2>
+    <p>Связаться с нами: <a href="mailto:mironivkemal189@gmail.com">kontakt@kursky.ru</a></p>
+  </section>
 
   <footer>
     &copy; 2025 Логово Kursky | Все права защищены | Black Russia Fan Project
