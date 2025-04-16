@@ -8230,8 +8230,20 @@ jdiv.jv-mouse-track {
 
   .discord-link a {
     width: 90%;
-    font-size: 1em;
-  }
+    font-size: nav a:hover {
+  color: #e60000;
+  text-shadow: 0 0 8px #nav a:hover {
+  color: #e60000;
+  text-shadow: 0 0 8px #@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+  100% { transform: scale(1); }
 }
-    
+
+.discord-link a {
+  animation: pulse 2s infinite;
+}}
+
+
+
 }
